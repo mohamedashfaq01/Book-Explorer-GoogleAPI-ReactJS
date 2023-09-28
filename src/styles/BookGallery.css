@@ -1,0 +1,47 @@
+/* src/components/BookGallery.css */
+
+/* .book-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+
+.book {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book-img {
+    width: 220px;
+    height: 220px;
+    border: 2px solid #000;
+    position: absolute;
+    object-fit: cover;
+}
+
+.book-title {
+    margin-left: 3px;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    opacity: 0.75;
+    width: 200px;
+
+}
